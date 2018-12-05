@@ -1,0 +1,142 @@
+<html>
+<head>
+    <link rel="stylesheet" href="catsstylerevised.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico|Fjalla+One" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawKittenChart);
+      function drawKittenChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Reason', 'Number of kittens'],
+          ['Survived',     42],
+          ['Likely died from disease',      46],
+          ['Disappeared (possibly hunted)',  40],
+          ['Dog attack', 18],
+          ['Motor vehicle',    10],
+          ['Other trauma', 5],
+          ['Stepped on', 3],
+          ['Intentionally killed', 3],
+          ['Fall', 2]
+        ]);
+
+        var options = {
+          title: 'What happened to 169 free-roaming kittens in a Florida study',
+          pieHole: 0.3,
+          backgroundColor: {stroke: '#ffb733', strokeWidth: 4},
+          colors:['#97f197','#b30000', '#b30000', '#b30000', '#b30000', '#b30000', '#b30000', '#b30000', '#b30000'],
+          legend: {position: 'none'},
+          fontName: 'Open Sans',
+          titleTextStyle: {color: 'black', fontSize: 12},
+          chartArea: {top: 75},
+          height: 300,
+          width: 300,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('kittenchart'));
+        chart.draw(data, options);
+      }
+    </script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawShelterChart);
+
+      function drawShelterChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Reason', 'Percent Reporting', {role: 'style'}],
+          ['Human health (ex. allergy)',    34, 'blue'],
+          ['Human housing (ex. no cats allowed)',       26, 'blue'],
+          ['Causing damage to house', 24, 'blue'],
+          ['Behavior problems',  21, 'blue'],
+          ['Too many household animals', 15, 'blue'],
+          ['Wrong expectations about ownership',    15, 'blue'],
+          ['Bringing found cat to shelter', 31, 'red'],
+          ['Owner circumstances', 19, 'red'],
+          ['Unwanted/unplanned kittens', 14, 'red'],
+          ['Behavior problems', 7, 'red'],
+          ['Owner allergy', 5, 'red']
+        ]);
+
+        var options = {
+          title: 'Reported reasons why cats were given up to shelters in two countries',
+          backgroundColor: {stroke: '#ffb733', strokeWidth: 4},
+          hAxis: {textPosition: 'none'},
+          legend: {position: 'none'},
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('columnchart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+
+<div id="sidebar">
+    <h1>The Stats about Cats</h1>
+    <div class="sidelink"><a href="catshome.html">home</a></div>
+    <div class="sidelink"><a href="worldofcats.html">cats around the world</a></div>
+    <div class="sidelink"><a href="catshealth.html">struggles of feral cats</a></div>
+    <div class="sidelink"><a href="catshunting.html">when cats are invasive</a></div>
+    <div class="sidelink"><a href="helpingcats.html">how to help cats</a></div>
+    <div class="sidelink"><a href="catsources.html">sources & links</a></div>
+</div>    
+    
+<div id="textcontain">
+    
+<h2>Cats in the wild--and why they're hurting</h2>    
+    
+<div class="warnbox">Note: this page contains information on animal death.</div>   
+    
+<div class="widetextbox">
+    <p>Not all cats live in cozy human homes, with guaranteed cat food and scratches on the head. About 100 million of the world's cats are free-roaming, which isn't as nice as the term implies. Unlike pet cats, they are not vaccinated against disease, they face threats from larger predators, and they can produce many vulnerable kittens. Cats in the wild live only an average of 2 years while pet cats live an average of 15 years! What's driving this ridiculous statistic? Let's explore.</p>
+</div>
+
+<h3>Types of free-roaming cats</h3>    
+    
+<div class="widetextbox">Cats without homes have arrived there in different ways and have different levels of comfort with humans. While there is no official way to describe them, we can sort them into three categories, described by Irene Rochlitz in chapter 10 of <i>The Domestic Cat,</i> each with their own problems.</div>
+    
+<table>
+    <tr>
+        <th>Feral</th>
+        <th>Semi-feral</th>
+        <th>Stray</th>
+    </tr>    
+    <tr>
+        <td>A cat that has never been owned by humans and is hostile to humans. This kind of cat will likely never be in a human home, but can be captured and treated by vets. It would be best for this cat to live in a managed colony.</td>
+        <td>A cat that has never been owned by humans, but is willing to interact with humans, perhaps because it has gotten food from them. It is possible that this cat can be socialized and become a pet.</td>
+        <td>A cat that was once owned by humans, but has been lost or abandoned. May face significant health issues in the wild due to their lack of skills, but can easily be adopted again.</td>
+    </tr>
+</table>
+    
+<h3>Disease and vaccination</h3>
+    
+    <div class="textbox">
+    <p>Free-roaming cats are vulnerable to more diseases than pet cats because they are not vaccinated. While cats rarely transmit disease to humans-- for example, there has not been a single case of cat-to-human rabies transmission in the US in the past 40 years--cats are vulnerable to diseases like this from the environment in which they live. Rabies in the US is most commonly transmitted by raccoons, bats, skunks, and foxes--all animals that wild cats are likely to encounter.</p>
+    <p>It's not just rabies, either. Living in a human home protects cats with FIV (feline immunodeficiency virus), the cat equivalent of HIV, from disease once their immune systems are weakened. And vaccines can prevent both feral cats and newly adopted cats from getting FIV. Other diseases that cats should be vaccinated for include feline distemper, feline herpesvirus, feline calicivirus, and feline leukemia virus. Without treatment, these diseases can cause health problems as wide-ranging and life-threatening as pneumonia and cancer.</p>
+    </div>
+    
+<h3>Dangers for kittens</h3>
+    
+    <div class="textbox">The average cat lifespan in the wild is especially driven down by the mortality rate of kittens. In general, over half of all wild kittens do not survive their first year. A study of a free-roaming cat population in Florida found that only 25% of the kittens born made it to six months of age. They were killed by disease, violence, and accidents, things that would not exist or would be greatly reduced if they lived with humans. 
+    <p>One female cat can have up to three litters per year, with an average of four kittens in each litter, and yet three-quarters of them may die. That's a lot of feline tragedy! Most cats should be spayed or neutered to avoid this, as well as reproductive system cancers, excessive population growth, and pregnancy complications. But living away from humans, most feral cats will never have this.
+    </div>  
+    
+    <div id="kittenchart" width: 300; height: 300;></div>
+    
+<h3>Abandoned cats and the struggles of strays</h3>
+    
+    <div class="widetextbox">
+    <p>Stray cats--those who used to be pets--end up facing the hardest time in the wild because they didn't grow up learning to survive without humans. Only 53% of lost cats are returned to their owners as opposed to more than 80% of dogs, meaning that there are a lot of stray cats out there!</p>
+    <p>Plus, not all stray cats arrived there by being lost. Sometimes people abandon cats for a variety of reasons. We can get an idea of why people abandon cats by looking at reports from shelters:</p>
+    </div>
+    
+    <div id="columnchart" style="width: 800px; height: 400px;"></div>    
+    
+    <div class="widetextbox">
+    <p>As you can see, the most common reasons for people to give up cats are things that are out of their control, like allergies, or lack of education about having a cat, for example how to stop a cat from destroying household items. For these reasons, learning about proper pet care would help reduce cat abandonment and therefore improve cat welfare.</p>    
+    </div>
+    
+</div>    
+    
+</html>

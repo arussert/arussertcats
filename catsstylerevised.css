@@ -1,0 +1,185 @@
+body {
+    background-image: url(https://www.wildtextures.com/wp-content/uploads/wildtextures-just-paper-seamless-texture.jpg);
+}
+
+h1 {
+    text-align: center;
+    color: orange;
+    font-family: 'Pacifico', cursive;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+    font-family: 'Pacifico', cursive;
+}
+
+h3 {
+    text-align: left;
+    color: black;
+    font-family: 'Pacifico', cursive;
+}
+
+a {
+    color: black;
+    text-align: center;
+}
+
+a:visited {
+    color: darkblue;
+}
+
+a:hover {
+    color: aqua;
+}
+
+table {
+    background-color: ghostwhite;
+    width: 700;
+    margin: auto;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 25;
+    padding: 10;
+}
+
+th {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+td {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12;
+    width: 233;
+    height: auto;
+    text-align: center;
+}
+
+.sidelink {
+    height: 30px;
+    width: 150px;
+    background-color: orange;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-family: 'Pacifico', cursive;
+    border-radius: 10px;
+}
+
+#sidebar {
+    background-color: ghostwhite;
+    width: 300px;
+    height: 575px;
+    position: fixed;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+#titlebox {
+    width: 700;
+    height: 200;
+    position: absolute;
+    top: 150;
+    left: 350;
+    border: double orange;
+}
+
+#meowpic {
+    width: 400;
+    height: 600;
+    position: absolute;
+    left: 80%;
+    top: 10%;
+    opacity: 0;
+}
+
+#meowpic:hover {
+    opacity: 1;
+}
+
+#catpic {
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    left: 75%;
+    top: 25%
+}
+
+#textcontain {
+    margin: auto;
+    width: 800;
+    height: 100%;
+    position: absolute;
+    left: 350px;
+}
+
+.warnbox {
+    background-color: dimgrey;
+    color: red;
+    width: 400;
+    height: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10;
+    padding: 10;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 25;
+    margin-top: 25;
+    
+}
+
+.textbox {
+    width: 400;
+    height: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12;
+    background-color: ghostwhite;
+    padding: 25;
+    margin-bottom: 25;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 25;
+}
+
+.widetextbox {
+    width: 700;
+    height: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12;
+    background-color: ghostwhite;
+    padding: 25;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 25;
+    margin-top: 25;
+}
+
+.sidepic {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  }
+
+#regions-div {
+    position: relative;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+#kittenchart {
+    display: inline-block;
+}
+
+#columnchart {
+    margin-top: 25;
+    margin-bottom: 25;
+}
+
+#tnr_chart {
+    margin: auto;
+}
+
+#id_chart {
+    display: inline-block;
+}

@@ -1,0 +1,71 @@
+<html>
+<head>
+    <link rel="stylesheet" href="catsstylerevised.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {
+  'packages': ['geochart'],
+  // Note: you will need to get a mapsApiKey for your project.
+  // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+});
+google.charts.setOnLoadCallback(drawMarkersMap);
+
+function drawMarkersMap() {
+  var data = google.visualization.arrayToDataTable([
+    ['Location', 'Extinct species'],
+    ['Australia', 15],
+    ['New Zealand', 11],
+    ['Ogasarawa Islands', 3],
+    ['Central America', 6],
+    ['Hawaii', 1],
+    ['Madagascar', 5],
+    ['Micronesia', 8],
+    ['St. Helena', 1],
+    ['Canary Islands', 1],
+    ['Cape Verde', 1]
+  ]);
+
+  var options = {
+    region: 'world',
+    displayMode: 'markers',
+    colorAxis: {
+      colors: ['black', 'black']
+    },
+      backgroundColor: {fill: '#add8e6', stroke: '#ffb733', strokeWidth: 4},
+  };
+
+  var chart = new google.visualization.GeoChart(document.getElementById('extinctchart'));
+  chart.draw(data, options);
+}
+
+    </script>
+</head>
+
+<div id="sidebar">
+    <h1>The Stats about Cats</h1>
+    <div class="sidelink"><a href="catshome.html">home</a></div>
+    <div class="sidelink"><a href="worldofcats.html">cats around the world</a></div>
+    <div class="sidelink"><a href="catshealth.html">struggles of feral cats</a></div>
+    <div class="sidelink"><a href="catshunting.html">when cats are invasive</a></div>
+    <div class="sidelink"><a href="helpingcats.html">how to help cats</a></div>
+    <div class="sidelink"><a href="catsources.html">sources & links</a></div>
+</div>    
+    
+<div id="textcontain">
+    
+<h2>It's not just the cats themselves who are struggling!</h2>    
+    
+<div class="warnbox">Note: this page contains information on animal death.</div>    
+    
+<div class="widetextbox">
+    <p>The other problem with free-roaming cats comes for the other animals in the ecosystem. Cats are one of the worst invasive species in the world, being native to the Middle East but existing on all habitable continents. While their pest-killing abilities are great for farms, they are terrible for native wildlife. Cats kill billions of small animals every year for food--1 to 4 billion birds and 6 to 22 billion small mammals in the United States alone. In the map below, you can see areas where cats have led to the extinction of native species--most of them on islands where the native wildlife never developed defenses against them.</p>
+</div>
+    
+<div id="extinctchart" style="width: 800px; height: 400px;"></div>    
+    
+<div class="widetextbox">In Australia, where cats arrived along with European colonizers only a few centuries ago, feral cats are officially declared a pest for their threat to local species. They currently threaten the survival of 120 species there. The government wants to cull two million cats from the country by 2020, but this is having an unexpected effect: dominant cats are the first to be killed, which means that other cats feel less threatened and move into colonies, actually increasing the number of cats in an area. In places like Australia, free-roaming cats need to be removed from the environment, but new approaches are needed.</div>    
+    
+</div>    
+    
+</html>

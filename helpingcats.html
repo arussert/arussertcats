@@ -1,0 +1,127 @@
+<html>
+<head>
+    <link rel="stylesheet" href="catsstylerevised.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Adult cats', 'Kittens'],
+          [1991,  68,      87],
+          [1996,  68,      0],
+          [2002,  23,      0]
+        ]);
+
+        var options = {
+          title: 'Reduction in a Florida free-roaming cat population',
+          legend: { position: 'bottom' },
+          backgroundColor: {stroke: '#ffb733', strokeWidth: 4},
+          hAxis: {format: '####'}
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('tnr_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <script type="text/javascript">
+        google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawBasic);
+
+function drawBasic() {
+
+      var data = google.visualization.arrayToDataTable([
+        ['Situation', 'Use of ID',],
+        ['Already owned (before intervention)', 14],
+        ['Already owned (after intervention)', 84],
+        ['Newly adopted', 94]
+      ]);
+
+      var options = {
+        title: 'Use of pet ID',
+        chartArea: {width: '50%'},
+        hAxis: {
+          title: 'Percent of pets wearing ID',
+          minValue: 0,
+            maxValue: 100,
+        },
+          colors: ['aqua'],
+        legend: {
+        	position: "none",
+        },
+          backgroundColor: {stroke: '#ffb733', strokeWidth: 4},
+      };
+
+      var chart = new google.visualization.BarChart(document.getElementById('id_chart'));
+
+      chart.draw(data, options);
+    }
+    </script>
+</head>
+
+<div id="sidebar">
+    <h1>The Stats about Cats</h1>
+    <div class="sidelink"><a href="catshome.html">home</a></div>
+    <div class="sidelink"><a href="worldofcats.html">cats around the world</a></div>
+    <div class="sidelink"><a href="catshealth.html">struggles of feral cats</a></div>
+    <div class="sidelink"><a href="catshunting.html">when cats are invasive</a></div>
+    <div class="sidelink"><a href="helpingcats.html">how to help cats</a></div>
+    <div class="sidelink"><a href="catsources.html">sources & links</a></div>
+</div>    
+    
+<div id="textcontain">
+    
+<h2>Options for everyone to improve the lives of cats</h2>    
+    
+<h3>Adopt or foster a formerly homeless cat</h3>
+    
+    <div class="sidepic">
+  <img src="https://upload.wikimedia.org/wikipedia/en/2/28/KittE_a_Van_cat_kitten.jpg" width=300; height=300;>
+</div>
+    
+    <div class="textbox">
+        <p>The most obvious way to help cats is, of course, to adopt one! Cats are actually one of the best beginner pets because they take care of themselves so well. They clean themselves, do their business in a convenient box, and are willing to play with toys made of all sorts of household items! Plus, you get the companionship and stress relief that comes with owning a cat. Believe it or not, owning a cat reduces the risk of heart attack by 40% according to a University of Minnesota study, more than owning a dog and more than cholesterol medication. This may be because cats' purrs are at a soothing frequency--or perhaps their cuteness just makes us less stressed.</p>
+        <p>Another way you can bring a cat into your home is through fostering. This is when you don't permanently keep a cat, but rather care for it so that it can later be adopted. You can care for a litter of kittens while they are too young to leave their mother, or get a semi-feral cat used to being in a human home. This is really necessary because these kinds of cats cannot yet live permanently with people, but they still need care. Animal rescues are always looking for fosters for cats.</p>
+    </div>
+    
+<h3>Contribute toward trap-neuter-return and sanctuary programs</h3>
+    
+    <div class="widetextbox">
+        <p>Not everyone can adopt a cat. Perhaps you are allergic, your landlord doesn't allow pets, your other pets wouldn't accept a cat, or you can't afford pet care at this time. Not to worry--there are still other ways to support cat care.</p>
+        <p>Feral cats, those who are hostile to humans, are unlikely to be trained to live in human homes unless they are young. But what can be done is to capture them, spay/neuter and vaccinate them, and release them either into their initial location if it's not too dangerous, or into a managed sanctuary where they are contained but do not have to interact with humans. This is called trap-neuter-return, or TNR, and it's our current most humane strategy for reducing the feral cat population. In one Florida cat population that started with 155 cats in 1991, so many were sterilized that there were no new kittens reported by 1996. Since many cats were semi-feral or stray and therefore adoptable, when 47% of the cats were adopted, by 2002 there were only 23 cats remaining in the colony, a much more manageable number.</p>
+    </div>
+    
+    <div id="tnr_chart" style="width: 400; height: 200;"></div>
+    
+    <div class="textbox">
+        <p>TNR actually costs less than euthanasia, and it doesn't result in the death of cats! However, studies have found that over 70% of cats in a colony must be sterilized in order to effectively reduce the population. With millions upon millions of feral cats in the world, that's a lot of surgeries. Donating to these programs can help keep them going.</p>
+        <p>Another way to help is to build cat shelters for sanctuaries. When feral cats can't live with humans, but can't be released back outside because of their threat to wildlife, they can live in managed sanctuaries after neutering and vaccination instead. In Minnesota, volunteers for the Minnesota Humane Society can build shelters for these sanctuaries. Cats are shielded from the weather and fed but can't attack humans.</p>
+    </div>
+    
+    <div class="sidepic">
+    <img src="https://c1.staticflickr.com/1/97/233600578_8adfaef536_b.jpg" width=300; height=200;>
+    </div>
+    
+<h3>Educate yourself and others on proper pet care</h3>
+    
+    <div id="id_chart" style="width: 300; height: 200;"></div>
+    
+    <div class="textbox">
+        <p>So you've got a cat. Now what? If you're like 15% of the people who gave up their cats to a USA shelter, you give up the cat because you have the wrong expectations about pet ownership. Knowing how many ownerless cats there are in the world, this is a terrible outcome. If you want to change this, you can help educate people on how to change their cat's behavior and make sure their cat is returned if lost.</p>
+        <p>One of the best ways to make sure a cat can be returned to its owner is identification. People may believe that a cat will not wear a collar and tag, but that's not the case. And simply giving people tags and telling them to put them on their cats at one vet's office proved that it increases ID wear (see chart to left). In the state of Western Australia, it is compulsory since 2011 for cats to be registered and have ID. This helps cats be identified and returned to humans.</p>
+    </div>
+    
+    <div class="textbox">
+            <p>Some also believe that cats cannot be trained out of their behavior problems. The truth is that cats respond to rewards and punishments just as other animals do. Cats have shorter attention spans than dogs, but they can still be trained using their favorite food to reinforce desired behaviors. For undesired behaviors, it's best to ignore the cat rather than yell at it--it's how mother cats teach their kittens. Cats are also sensitive to unpleasant smells, so getting a cat-safe repellent from a pet store can make a cat stop getting into something it shouldn't. Teaching people how to train their cats could change a lot, seeing as another of the most common reasons for abandoning cats is behavior problems.</p>
+        </div>
+    
+    <div class="sidepic">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Young_cat.jpg" width=300; height=200;>
+    </div>
+    
+</div>    
+    
+</html>

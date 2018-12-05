@@ -1,0 +1,72 @@
+<html>
+<head>
+    <link rel="stylesheet" href="catsstylerevised.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+    google.charts.load('current', {
+    'packages': ['geochart'],
+        // Note: you will need to get a mapsApiKey for your project.
+        // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+    'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+});
+google.charts.setOnLoadCallback(drawRegionsMap);
+
+function drawRegionsMap() {
+    var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/10vvXBk7-GHtgmdcpShn_AGfkRaGXrPEM-pNA9lMzw0U/edit#gid=0');
+    query.send(handleQueryResponse);
+};
+  
+function handleQueryResponse(response) {
+    var data = response.getDataTable();
+
+    var options = {
+        colorAxis: {colors: ['#35ac79', '#00522f']},
+        datalessRegionColor: '#aaaaaa',
+        backgroundColor: {fill: '#add8e6', stroke: '#ffb733', strokeWidth: 4},
+        };
+    
+    var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+    chart.draw(data, options);
+}
+    </script>
+</head>
+
+<div id="sidebar">
+    <h1>The Stats about Cats</h1>
+    <div class="sidelink"><a href="catshome.html">home</a></div>
+    <div class="sidelink"><a href="worldofcats.html">cats around the world</a></div>
+    <div class="sidelink"><a href="catshealth.html">struggles of feral cats</a></div>
+    <div class="sidelink"><a href="catshunting.html">when cats are invasive</a></div>
+    <div class="sidelink"><a href="helpingcats.html">how to help cats</a></div>
+    <div class="sidelink"><a href="catsources.html">sources & links</a></div>
+</div>    
+    
+    
+<div id="textcontain">
+    
+<h2>The history and geography of cats</h2>
+    
+<div class="textbox">    <p>After having domesticated themselves 10,000 years ago in the Fertile Crescent area (modern Iraq, southern Turkey, and Syria), cats have clawed their way into the hearts of humans everywhere--they are the most populous companion animal in the world! Estimates of the world cat population range between 200-600 million, with 86 million of those in the United States alone.</p>
+    <p>Cats were revered in ancient Egypt, considered to be manifestations of a goddess. People were executed for killing cats, and they would run away from the sight of a dead cat so that nobody would think they had killed it! Cats are also admired in Islam, as Muhammad loved his pet cats and liked their cleanliness. Nowadays cats live on every continent except Antarctica, and they are especially popular as pets in North America, Europe, and the Middle East.</p>
+    <p>Explore the estimated number of cats in 83 countries by "mousing" over the map below!</p></div>    
+    
+<div class="sidepic">
+    <img src="https://c1.staticflickr.com/7/6087/6057770350_8201412b93_b.jpg" alt="egyptian cat statue" style="width: 240; height: 300; padding-left: 25;">
+</div>    
+    
+<div id="regions_div" style="width: 800px; height: 400px;"></div>
+    
+<div class="sidepic">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/A_black_cat_named_Tilly.jpg" alt="black cat" style="width: 275; height: 275; margin-top: 40;">
+</div>    
+    
+<div class="textbox">
+    <p>Cats initially remained only in North Africa and the Middle East because exporting cats out of Egypt was illegal. They only reached China after 200 BCE. Ancient Greeks and Romans preferred domestic ferrets to catch pests until the 4th century CE, when pet cats began to spread around the Roman Empire.</p>
+    <p>While cats became respected in Islam, they became associated with witchcraft in Christianity, and gained a bad reputation. In English witch trials, cats were the most commonly reported animals as witches' familiars. Black cats especially were persecuted, as people believed they were witches in disguise. But cats persisted to become popular European pets--in Switzerland, they even outnumber dogs 3 to 1! Sadly, people often still regard black cats as unlucky. Nevertheless, their popularity means that they are indeed great companions.</p>
+</div>    
+    
+</div>    
+
+</html>
