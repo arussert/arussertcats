@@ -19,7 +19,8 @@
           title: 'Reduction in a Florida free-roaming cat population',
           legend: { position: 'bottom' },
           backgroundColor: {stroke: '#ffb733', strokeWidth: 4},
-          hAxis: {format: '####'}
+          hAxis: {format: '####'},
+            colors: ['darkorange', 'darkturquoise']
         };
 
         var chart = new google.visualization.LineChart(document.getElementById('tnr_chart'));
@@ -48,7 +49,7 @@ function drawBasic() {
           minValue: 0,
             maxValue: 100,
         },
-          colors: ['aqua'],
+          colors: ['darkturquoise'],
         legend: {
         	position: "none",
         },
@@ -95,6 +96,8 @@ function drawBasic() {
     </div>
     
     <div id="tnr_chart" style="width: 400; height: 200;"></div>
+    <div class="chartsource">Levy, J.K, Gale, D.W, and Gale, L.A. (2003.) “Evaluation of the effect of a long-term
+trap-neuter-return and adoption program on a free-roaming cat population.” <i>Journal of the American Veterinary Medical Association, 222</i> (1), 42-46.</div>
     
     <div class="textbox">
         <p>TNR actually costs less than euthanasia, and it doesn't result in the death of cats! However, studies have found that over 70% of cats in a colony must be sterilized in order to effectively reduce the population. With millions upon millions of feral cats in the world, that's a lot of surgeries. Donating to these programs can help keep them going.</p>
@@ -107,7 +110,8 @@ function drawBasic() {
     
 <h3>Educate yourself and others on proper pet care</h3>
     
-    <div id="id_chart" style="width: 300; height: 200;"></div>
+    <div id="id_chart" style="width: 300; height: 200;">    <div class="chartsource">Turner, D. & Bateson, P. (Eds.), (2013.) <i>The Domestic Cat: The Biology of its Behaviour.</i> Cambridge: Cambridge University Press. </div></div>
+
     
     <div class="textbox">
         <p>So you've got a cat. Now what? If you're like 15% of the people who gave up their cats to a USA shelter, you give up the cat because you have the wrong expectations about pet ownership. Knowing how many ownerless cats there are in the world, this is a terrible outcome. If you want to change this, you can help educate people on how to change their cat's behavior and make sure their cat is returned if lost.</p>

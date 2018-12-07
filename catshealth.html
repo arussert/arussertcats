@@ -61,7 +61,8 @@
         var options = {
           title: 'Reported reasons why cats were given up to shelters in two countries',
           backgroundColor: {stroke: '#ffb733', strokeWidth: 4},
-          hAxis: {textPosition: 'none'},
+          hAxis: {textPosition: 'none', title: 'Reasons, with blue indicating USA shelter and red indicating UK shelter'},
+            vAxis: {title: 'Percent reporting'},
           legend: {position: 'none'},
         };
 
@@ -122,15 +123,16 @@
     </div>
     
 <h3>Dangers for kittens</h3>
-    
+ 
+        
     <div class="textbox">The average cat lifespan in the wild is especially driven down by the mortality rate of kittens. In general, over half of all wild kittens do not survive their first year. A study of a free-roaming cat population in Florida found that only 25% of the kittens born made it to six months of age. They were killed by disease, violence, and accidents, things that would not exist or would be greatly reduced if they lived with humans. 
     <p>One female cat can have up to three litters per year, with an average of four kittens in each litter, and yet three-quarters of them may die. That's a lot of feline tragedy! Most cats should be spayed or neutered to avoid this, as well as reproductive system cancers, excessive population growth, and pregnancy complications. But living away from humans, most feral cats will never have this.
-    </div>  
+    </div> 
+    
+
+    <div id="kittenchart" style="width: 300; height: 300;"><div class="chartsource">Nutter, F.B, Levine, J.F, and Stoskopf, M.K. (2004). “Reproductive capacity of free-roaming domestic cats and kitten survival rate.” <i>Journal of the American Veterinary Medical Association, 225</i> (9), 1399-1402.</div></div>
     
     
-<div class="sidepic">
-    <div id="kittenchart" style="width: 300; height: 300;"></div>
-    </div>
     
 <h3>Abandoned cats and the struggles of strays</h3>
     
@@ -140,6 +142,7 @@
     </div>
     
     <div id="columnchart" style="width: 800px; height: 400px;"></div>    
+    <div class="chartsource">Turner, D. & Bateson, P. (Eds.), (2013.) <i>The Domestic Cat: The Biology of its Behaviour.</i> Cambridge: Cambridge University Press. </div>
     
     <div class="widetextbox">
     <p>As you can see, the most common reasons for people to give up cats are things that are out of their control, like allergies, or lack of education about having a cat, for example how to stop a cat from destroying household items. For these reasons, learning about proper pet care would help reduce cat abandonment and therefore improve cat welfare.</p>    

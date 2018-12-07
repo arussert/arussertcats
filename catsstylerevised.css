@@ -22,8 +22,6 @@ h3 {
 
 a {
     color: black;
-    text-align: center;
-    display: block;
 }
 
 a:visited {
@@ -65,8 +63,9 @@ td {
     font-family: 'Pacifico', cursive;
     font-size: 16px;
     border-radius: 10px;
-    margin-left: 50px;
+    margin: auto;
     margin-bottom: 30px;
+    display: block;
 }
 
 .sidelink:hover {
@@ -89,6 +88,16 @@ td {
     top: 150;
     left: 350;
     border: double orange;
+}
+
+#subtitle {
+    position: absolute;
+    left: 350;
+    top: 400;
+    font-family: 'Pacifico', cursive;
+    font-size: 18px;
+    width: 500;
+    height: 100;
 }
 
 #meowpic {
@@ -174,6 +183,8 @@ td {
 }
 
 #kittenchart {
+    position: absolute;
+    margin: auto;
     display: inline-block;
 }
 
@@ -188,4 +199,12 @@ td {
 
 #id_chart {
     display: inline-block;
+}
+
+.chartsource {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10;
+    width: 300;
+    height: auto;
+    margin: auto;
 }
