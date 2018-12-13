@@ -4,20 +4,26 @@ body {
 
 h1 {
     text-align: center;
-    color: orange;
-    font-family: 'Pacifico', cursive;
+    color: #ffb733;
+    font-family: 'Loved by the King', cursive;
+    font-size: 36;
 }
 
 h2 {
     text-align: center;
     color: black;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Loved by the King', cursive;
+    background-color: azure;
+    width: 500;
+    border-radius: 10px;
+    margin: auto;
+    font-size: 28;
 }
 
 h3 {
     text-align: left;
     color: black;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Loved by the King', cursive;
 }
 
 a {
@@ -57,11 +63,11 @@ td {
 .sidelink {
     height: 30px;
     width: 150px;
-    background-color: orange;
+    background-color: #ffb733;
     text-align: center;
     padding: 10px;
-    font-family: 'Pacifico', cursive;
-    font-size: 16px;
+    font-family: 'Loved by the King', cursive;
+    font-size: 18px;
     border-radius: 10px;
     margin: auto;
     margin-bottom: 30px;
@@ -87,17 +93,21 @@ td {
     position: absolute;
     top: 150;
     left: 350;
-    border: double orange;
+    border: double #ffb733;
 }
 
 #subtitle {
     position: absolute;
     left: 350;
     top: 400;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Loved by the King', cursive;
     font-size: 18px;
-    width: 500;
+    width: 400;
     height: 100;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding-left: 25;
+    padding-right: 25;
 }
 
 #meowpic {

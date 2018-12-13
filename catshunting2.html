@@ -1,0 +1,51 @@
+<html>
+<head>
+<meta charset='utf-8' />
+<title>Cats and extinction of species</title>
+        <link rel="stylesheet" href="catsstylerevised.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Loved+by+the+King" rel="stylesheet">
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
+<style>
+#map { position:relative; width: 800; height:400; }
+</style>
+</head>
+<body>
+    
+<div id="sidebar">
+    <h1>The Stats about Cats</h1>
+    <a class="sidelink" href="index.html">home</a>
+    <a class="sidelink" href="worldofcats.html">cats around the world</a>
+    <a class="sidelink" href="catshealth.html">struggles of feral cats</a>
+    <a class="sidelink" href="catshunting2.html">when cats are invasive</a>
+    <a class="sidelink" href="helpingcats.html">how to help cats</a>
+    <a class="sidelink" href="catsources.html">sources & links</a>
+</div>    
+    
+<div id="textcontain">
+    
+<h2>It's not just the cats themselves who are struggling!</h2>    
+    
+<div class="warnbox">Note: this page contains information on animal death.</div>    
+    
+<div class="widetextbox">
+    <p>The other problem with free-roaming cats comes for the other animals in the ecosystem. Cats are one of the worst invasive species in the world, being native to the Middle East but existing on all habitable continents. While their pest-killing abilities are great for farms, they are terrible for native wildlife. Cats kill billions of small animals every year for food--1 to 4 billion birds and 6 to 22 billion small mammals in the United States alone. In the map below, you can see areas where cats have led to the extinction of native species--most of them on islands where the native wildlife never developed defenses against them.</p>
+</div>
+ 
+<div id='map'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiYXJ1c3NlcnQiLCJhIjoiY2pwbjUzZmlvMHc2aDQzbXVlaTBlejY1NSJ9.ZoMoyIGJ7iwZG0gmVyNiYw';
+const map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/arussert/cjpn54zaz1uh92smrdfvb6caa',
+center: [-75.911136, 42.097267],
+zoom: 13.0
+});
+</script>
+ 
+    <div class="widetextbox">In Australia, where cats arrived along with European colonizers only a few centuries ago, feral cats are officially declared a pest for their threat to local species. They currently threaten the survival of 120 species there. The government wants to cull two million cats from the country by 2020, but this is having an unexpected effect: dominant cats are the first to be killed, which means that other cats feel less threatened and move into colonies, actually increasing the number of cats in an area. In places like Australia, free-roaming cats need to be removed from the environment, but new approaches are needed.</div>    
+    
+</div>    
+</body>
+</html>
