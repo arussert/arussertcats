@@ -35,10 +35,10 @@ function handleQueryResponse(response) {
 
 function drawSecondRegionsMap() {
     var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1AGQf5rxIv-B16wrtilpT4fGlhqusb9M7og30s9D6UKE/gviz/tq?range=A2:B83');
-    query.send(handleQueryResponse);
+    query.send(handleSecondQueryResponse);
 }
   
-function handleQueryResponse(response) {
+function handleSecondQueryResponse(response) {
     var data = response.getDataTable();
 
     var options = {
