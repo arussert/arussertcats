@@ -20,11 +20,11 @@
           legend: { position: 'bottom' },
           backgroundColor: {stroke: '#ffb733', strokeWidth: 4},
           hAxis: {format: '####'},
-            colors: ['darkorange', 'darkturquoise']
+            colors: ['darkorange', 'darkturquoise'],
+            isStacked: true,
         };
 
-        var chart = new google.visualization.LineChart(document.getElementById('tnr_chart'));
-
+        var chart = new google.visualization.AreaChart(document.getElementById('tnr_chart'));
         chart.draw(data, options);
       }
     </script>
@@ -81,6 +81,7 @@ function drawBasic() {
     
     <div class="sidepic">
   <img src="https://upload.wikimedia.org/wikipedia/en/2/28/KittE_a_Van_cat_kitten.jpg" width=300; height=300;>
+        <div class="imgsource">Author: Meowy (Wikipedia)</div>
 </div>
     
     <div class="textbox">
@@ -106,6 +107,7 @@ trap-neuter-return and adoption program on a free-roaming cat population.” <i>
     
     <div class="sidepic">
     <img src="https://c1.staticflickr.com/1/97/233600578_8adfaef536_b.jpg" width=300; height=200;>
+        <div class="imgsource">Author: Tjflex2 (Flickr)</div>
     </div>
     
 <h3>Educate yourself and others on proper pet care</h3>

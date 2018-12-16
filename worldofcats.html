@@ -10,6 +10,8 @@
         // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
 });
 google.charts.setOnLoadCallback(drawRegionsMap);
+    
+google.charts.setOnLoadCallback(drawSecondRegionsMap);
 
 function drawRegionsMap() {
     var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/10vvXBk7-GHtgmdcpShn_AGfkRaGXrPEM-pNA9lMzw0U/gviz/tq?gid=0');
@@ -29,14 +31,7 @@ function handleQueryResponse(response) {
 
     chart.draw(data, options);
 }
-    </script>
-    <script>
-            google.charts.load('current', {
-    'packages': ['geochart'],
-        // Note: you will need to get a mapsApiKey for your project.
-        // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
-});
-google.charts.setOnLoadCallback(drawSecondRegionsMap);
+
 
 function drawSecondRegionsMap() {
     var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1AGQf5rxIv-B16wrtilpT4fGlhqusb9M7og30s9D6UKE/gviz/tq?range=A2:B83');

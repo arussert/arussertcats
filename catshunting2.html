@@ -5,8 +5,9 @@
         <link rel="stylesheet" href="catsstylerevised.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Loved+by+the+King" rel="stylesheet">
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
-<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css' rel='stylesheet' />
+
 <style>
 #map { position:relative; width: 800; height:400; }
 </style>
@@ -36,11 +37,11 @@
 <div id='map'></div>
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoiYXJ1c3NlcnQiLCJhIjoiY2pwbjUzZmlvMHc2aDQzbXVlaTBlejY1NSJ9.ZoMoyIGJ7iwZG0gmVyNiYw';
-const map = new mapboxgl.Map({
-container: 'map',
-style: 'mapbox://styles/arussert/cjpn54zaz1uh92smrdfvb6caa',
-center: [-75.911136, 42.097267],
-zoom: 13.0
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/arussert/cjpn54zaz1uh92smrdfvb6caa',
+    zoom: 0,
+    renderWorldCopies: false,
 });
 </script>
  
